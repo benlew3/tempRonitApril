@@ -2,14 +2,14 @@ $(document).ready(function() {
 
   "use strict";
 
-  // -------------- Preloader -------------- 
+  // -------------- Preloader --------------
   $(".preloader").addClass('animated fadeOut');
   setTimeout(function(){
     $(".preloader").addClass('loaded');
   }, 1000);
 
   $("#typed").typed({
-    strings: ["Caring Comfort", "Pain Relief","Alternative Medicine", "<em style='color:#FE642E; text-decoration:underline;'>BodyWork</em>"],
+    strings: ["Easing muscle tension.", "Increasing mobility.", "Bodywork that brings ease back into your movement."],
     typeSpeed: 30,
     startDelay: 0,
     backSpeed: 30,
@@ -25,12 +25,12 @@ $(document).ready(function() {
     resetCallback: function() {}
   });
 
-  // -------------- On Scroll Navbar Effect -------------- 
+  // -------------- On Scroll Navbar Effect --------------
 
   var window_width = $(window).width();
 
-  $(window).scroll(function(){  
-    "use strict"; 
+  $(window).scroll(function(){
+    "use strict";
     var scroll = $(window).scrollTop();
     if( scroll > 60 ){
       $(".navbar").addClass("scroll-fixed-navbar");
@@ -39,7 +39,7 @@ $(document).ready(function() {
     }
   });
 
-  // -------------- Scroll to content animation -------------- 
+  // -------------- Scroll to content animation --------------
 
   $(".scroll-info a[href^='#']").on('click', function(e) {
     e.preventDefault();
@@ -48,15 +48,15 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  // -------------- Parallax -------------- 
-  
+  // -------------- Parallax --------------
+
   if( window_width > 992 ){
     $('.testimonial').parallax("50%", 0.1);
     $('.counter').parallax("50%", 0.1);
     $('.twitter-feed').parallax("50%", 0.1);
   }
 
-  // -------------- Scroll to content animation -------------- 
+  // -------------- Scroll to content animation --------------
 
   $(".navbar-nav li a[href^='#']").on('click', function(e) {
     e.preventDefault();
@@ -65,7 +65,7 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  // -------------- Jquery WOW (reveal content when scroll) -------------- 
+  // -------------- Jquery WOW (reveal content when scroll) --------------
 
   var wow = new WOW(
     {
@@ -76,7 +76,7 @@ $(document).ready(function() {
   );
   wow.init();
 
-  // -------------- Jquery CountTo (Project Counter) -------------- 
+  // -------------- Jquery CountTo (Project Counter) --------------
  $('.counter').appear(function() {
     $('.timer').each(count);
     function count(options) {
@@ -86,21 +86,21 @@ $(document).ready(function() {
     }
   });
 
-  // -------------- Owl Carousel -------------- 
+  // -------------- Owl Carousel --------------
 
   var owl = $("#clients");
- 
+
   owl.owlCarousel({
     items : 5,
     itemsDesktop : [1000,5],
     itemsDesktopSmall : [900,3],
     itemsTablet: [600,2],
-    itemsMobile : [400,1], 
+    itemsMobile : [400,1],
     pagination: false,
     autoPlay : 3000
   });
 
-  // -------------- Slick -------------- 
+  // -------------- Slick --------------
 
   $('.center').slick({
     centerMode: true,
@@ -130,7 +130,7 @@ $(document).ready(function() {
     $('.related-project .prev-project').addClass("lighter");
   });
 
-  // -------------- Jquery Masonry (Project Counter) -------------- 
+  // -------------- Jquery Masonry (Project Counter) --------------
 
   var $container = $('#masonry-container');
 
@@ -142,9 +142,9 @@ $(document).ready(function() {
 });
 
 
-$(window).load(function(){ 
+$(window).load(function(){
 
-  // -------------- Jquery Isotope Setting -------------- 
+  // -------------- Jquery Isotope Setting --------------
 
   var $container = $('.portfoliocontent');
   $container.isotope({
